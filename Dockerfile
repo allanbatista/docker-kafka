@@ -20,7 +20,7 @@ ENV KAFKA_LOG_DIR=/kafka/log
 
 # Install Deps
 RUN apt-get update \
-    && apt-get install openjdk-8-jdk locales wget python3 -y \
+    && apt-get install openjdk-8-jdk locales wget python3 python3-pip -y \
     && sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && locale-gen \
     && apt-get clean
 

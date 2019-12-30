@@ -28,3 +28,5 @@ Esse cluster será iniciado em alta disponibilidade com 3 nós zookeeper e 4 nó
 O kafka está com as seguintes configurações padrões:
 * 3 partições
 * 3 replicas de cada partição
+* o reserved.broker.max.id esta definido como 2^32 por padrão
+* o broaker.id é gerado randomicamente se não for definido.
